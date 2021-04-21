@@ -13,6 +13,13 @@ You recieve this service on a pay-as-you-go basis, so you only spend money on wh
 
 
 ## What is AWS?
-It's a cloud service provider.
+It's a cloud service provider. They offer more than 100 cloud services on their platform.
+
+It's a secure cloud service platfrom. They offer computing power, database(s), networking, content sorage, and more. Services are offered on a pay-as-you-go basis.
 
 ### Three Benefits of using AWS
+- Security
+- Experience
+- Flexible
+- Easy to use
+- Scalable
