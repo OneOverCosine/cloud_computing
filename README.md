@@ -11,9 +11,9 @@ You recieve this service on a pay-as-you-go basis, so you only spend money on wh
 - Server maintainance done by servive provider
 
 ## What is AWS?
-(It's a cloud service provider. They offer more than 100 cloud services on their platform.)
+_(It's a cloud service provider. They offer more than 100 cloud services on their platform.)_ Duplicated notes
 
-It's a secure cloud service platfrom. They offer computing power, database(s), networking, content sorage, and more. Services are offered on a pay-as-you-go basis.
+It's a secure cloud service platfrom. They offer computing power, databases, networking, content sorage, and more. Services are offered on a pay-as-you-go basis.
 
 ### Three Benefits of using AWS
 - Security
@@ -49,16 +49,28 @@ You own an online shop. Most of the year, you get around (let's say) 100-150 cus
 - Spinning up an EC2 instance (we use the Ireland DZ) - make sure it's Ubuntu 16.04
 - Choose free tier for t2.micro when selecting instance type
 - Naming convention for naming any service on AWS - `Eng84_myname_app`. For this example do `Eng84_katalyst_app`
-- Create a security group named `Eng84_katalyst_app_sg`. Details: SSH, TCP, 22, My IP
+- Create a security group named `Eng84_katalyst_app_sg`. Details: SSH, TCP, 22, IP
 - Review and launch
 
 ---
 Once inside the machine (in admin mode):
 - Run `apt-get update` and `apt-get upgrade`
 - Run `apt-get install ngnix` to install Nginx
+- To check that it has installed, run `systemctl status nginx`
+- Now you can use the public ip to access the default Nginx page!
+.  
+.  
+- `scp -ri [pem file] [file/folder] ubuntu@[ip]:[path]` For copying files from main os to vm
+- `git clone [repository]`
 
 ### DB server
 This one won't have a public IP. It will only be accessed through the `app` machine.  
+
+### AMI - Amazon Machine Image
+Create a snapshot of a VM instance for use later.
+
+### Extras
+I am responsible for the security of the instances I create
 
 .  
 .  
