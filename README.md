@@ -1,4 +1,5 @@
 # Cloud Computing with AWS
+(images pending...)
 
 ## What is Cloud Computing?
 It's the on-demand delivery of IT resources - such as computing power, storage, and databases - via the Internet. This is an alternative to buying, owning, and maintaining physical servers.  
@@ -70,7 +71,7 @@ This one won't have a public IP. It will only be accessed through the `app` mach
 Create a snapshot of a VM instance for use later.
 
 ## Extras
-I am responsible for the security of the instances I create
+I am responsible for the security of the instances I create  
 [Info](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) from AWS themselves!
 
 ### Security groups
@@ -84,6 +85,9 @@ Can have multiple subnets inside them. Determines who can access the application
 
 ### Multi-cloud Arcitecture
 Deploying the same app using different clouds (using two or more cloud service providers). This is to increase availability. If one goes down then we still have the other.
+
+### REGIONS
+Geographical position of servers, used to host applications
 
 .  
 .  
