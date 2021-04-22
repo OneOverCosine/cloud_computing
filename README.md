@@ -46,7 +46,7 @@ You own an online shop. Most of the year, you get around (let's say) 100-150 cus
 
 ## EC2 - Elastic Cloud Compute
 ### App server
-- Spinning up an EC2 instance (we use the Ireland DZ) - make sure it's Ubuntu 16.04
+- Spinning up an EC2 instance (we use the Ireland region) - make sure it's Ubuntu 16.04
 - Choose free tier for t2.micro when selecting instance type
 - Naming convention for naming any service on AWS - `Eng84_myname_app`. For this example do `Eng84_katalyst_app`
 - Create a security group named `Eng84_katalyst_app_sg`. Details: SSH, TCP, 22, IP
@@ -69,8 +69,21 @@ This one won't have a public IP. It will only be accessed through the `app` mach
 ### AMI - Amazon Machine Image
 Create a snapshot of a VM instance for use later.
 
-### Extras
+## Extras
 I am responsible for the security of the instances I create
+[Info](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) from AWS themselves!
+
+### Security groups
+Works like a firewall for the instance. It only lets specific traffic through.
+
+### Subnet
+Works across the whole application.
+
+### Virtual Private Cloud (VPC)
+Can have multiple subnets inside them. Determines who can access the application.
+
+### Multi-cloud Arcitecture
+Deploying the same app using different clouds (using two or more cloud service providers). This is to increase availability. If one goes down then we still have the other.
 
 .  
 .  
