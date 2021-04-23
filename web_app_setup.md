@@ -1,7 +1,6 @@
-# Setting up a Web Server
+# Setting up a Web Server (Part One)
 ## Prerequisites
 - Have an AWS account
-- Have a key pair set up
 
 ## Setting up a Virtual Private Cloud (VPC)
 - Navigate to the VPC section of AWS (you can enter "VPC" in the top search bar)
@@ -49,3 +48,6 @@
 - Add the route `0.0.0.0/0` to the destination
 - Select `Internet Gateway` then the name of you gateway for the target
 - Hit the `Save routes` button
+
+## Creating EC2 Instances
+This will be covered in [another guide](ec2_instance_setup.md)
