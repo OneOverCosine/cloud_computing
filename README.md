@@ -32,19 +32,28 @@ It's a secure cloud service platfrom. They offer computing power, databases, net
 - LinkedIn
 
 ## Types of Computing
-**On premises**  
-**Cloud**  
-**Hybrid**
+__On premises__  
+__Cloud__  
+__Hybrid__
 
 ## Scaling
-**Scaling up** - This is when you upgrade the servers that are currently in use. This can be increasing the memory the servers have.  
-**Scaling out** - This is when you get new servers.  
-**Scaling down** - Removing resources (usually servers) that aren't in use to say money and resources.
+__Scaling up__ - This is when you upgrade the servers that are currently in use. This can be increasing the memory the servers have.  
+__Scaling out__ - This is when you get new servers.  
+__Scaling down__ - Removing resources (usually servers) that aren't in use to save money and resources.
 
 ## Auto-scaling
-This is a handy tool for making sure your business can always keep up with demand. It also saves money when the demand is low.Consider this senario:  
+This is a handy tool for making sure your business can always keep up with demand. It also saves money when the demand is low. Consider this senario:  
 You own an online shop. Most of the year, you get around (let's say) 100-150 customers each day. At Christmas, the number of customers per day increases by 500% (the important think is that your servers as they are can't handle this traffic). With `on premises` computing you need to buy and setup servers that will only be used once a year. With `cloud computing` you can pay for more resources as and when you need them.
 
+## Software Architecture
+### Monolithic (One-Tier or Standalone application)
+![One-Tier](./images/one-tier-software-architecture.png)
+
+### Two-Tier (Client-Server application)
+![Two-Tier](./images/two-tier-software-architecture.png)
+
+### Three-Tier
+![Three-Tier](./images/three-tier-software-architecture.png) 
 
 ## EC2 - Elastic Cloud Compute
 ### App server
@@ -88,6 +97,11 @@ Can have multiple subnets inside them. Determines who can access the application
 
 ### Multi-cloud Arcitecture
 Deploying the same app using different clouds (using two or more cloud service providers). This is to increase availability. If one goes down then we still have the other.
+
+### Network Access Control List (NACL)
+Helps provide a laayer of security to the AWS stack. It helps in providing a firewall, thus helping secure VPCs and subnets.  
+Components of a NACL
+- __Rule number__ - Every rule is assigned a unique number. The rule's priority is also determined by this number. Note that rule are created with specific increments. For example, the difference between two rules could be 1, 10, or 100. _All rules created have the same difference_
 
 ### REGIONS
 Geographical position of servers, used to host applications
