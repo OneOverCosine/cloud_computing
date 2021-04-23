@@ -99,9 +99,17 @@ Can have multiple subnets inside them. Determines who can access the application
 Deploying the same app using different clouds (using two or more cloud service providers). This is to increase availability. If one goes down then we still have the other.
 
 ### Network Access Control List (NACL)
+[Detailed reading](https://www.knowledgehut.com/tutorials/aws/aws-nacl)
 Helps provide a laayer of security to the AWS stack. It helps in providing a firewall, thus helping secure VPCs and subnets.  
 Components of a NACL
 - __Rule number__ - Every rule is assigned a unique number. The rule's priority is also determined by this number. Note that rule are created with specific increments. For example, the difference between two rules could be 1, 10, or 100. _All rules created have the same difference_
+- __Type__ - Tells us about the type of traffic. SSH, HTTP, HTTPS
+- __Protocol__ - The set of rules that are applied to every request
+- __Portrange__ - The listening port
+- __Inbound rules__ - Aka source. These rules talk about the source from where the request or traffic is coming from. Also about the destination port/ the port through which the response is sent
+- __Outbound rules__ - Aka destination. These rules talk about where ther response should be sent. Also about the destination port
+- __Allow/Deny__ - Whether the specific traffic has to be allowed or denied
+
 
 ### REGIONS
 Geographical position of servers, used to host applications
