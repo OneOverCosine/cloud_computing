@@ -1,5 +1,6 @@
 # Cloud Computing with AWS
-(images pending...)
+
+## [Setting up a Web Server](web_app_setup.md)
 
 ## What is Cloud Computing?
 It's the on-demand delivery of IT resources - such as computing power, storage, and databases - via the Internet. This is an alternative to buying, owning, and maintaining physical servers.  
@@ -78,7 +79,9 @@ I am responsible for the security of the instances I create
 Works like a firewall for the instance. It only lets specific traffic through.
 
 ### Subnet
-Works across the whole application.
+Divides a network into two or more 'sub' networks.
+- Works across the whole application.
+- 
 
 ### Virtual Private Cloud (VPC)
 Can have multiple subnets inside them. Determines who can access the application.
